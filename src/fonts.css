@@ -1,0 +1,10 @@
+@font-face {
+    font-family: codeProBlack;
+    src: url(./assets/fonts/sourcecodepro-black-webfont.woff) format('woff'),
+         url(./assets/fonts/sourcecodepro-black-webfont.woff2) format('woff2');
+}
+@font-face {
+    font-family: codeProSemiBold;
+    src: url(./assets/fonts/sourcecodepro-semibold-webfont.woff) format('woff'),
+         url(./assets/fonts/sourcecodepro-semibold-webfont.woff2) format('woff2');
+}

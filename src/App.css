@@ -1,0 +1,101 @@
+html {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  align-items: center;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: example;
+  animation-timing-function: linear;
+  background-color: #F35430;
+  display: flex; 
+  height: 100vh; 
+  justify-content: center;
+  margin: 0; 
+  width: auto; 
+}
+@keyframes example {
+  0%  {background-color: #F35430;}
+  40%  {background-color: #F1C842;}
+  60%  {background-color: #F49697;}
+  80%  {background-color: #4FCABC;}
+  100%  {background-color: #FE91DC}
+}
+
+
+.App {
+  display: flex; 
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+}
+
+.outerContainer {
+  background-image: url(./assets/shapes2.gif); 
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+}
+
+.clock {
+  align-items: center;
+  display: flex; 
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  margin: 50px auto;
+  position: relative;
+  width: 500px;
+}
+
+p {
+  font-family: 'codeProSemiBold';
+  font-size: 0.2em;
+  text-align: center;
+
+}
+.triangle {
+  animation: rotate 4s linear infinite;
+  background-color: transparent;
+  border-color: transparent transparent #007bff transparent; 
+  border-style: solid; 
+  border-width: 0 50px 80px 50px;
+  height: 0;
+  left: 150px;
+  position: absolute;
+  top: 100px;
+  width: 0;
+  z-index: -1;
+}
+.secondTriangle {
+  animation: rotate 4s linear infinite; 
+  background-color: transparent;
+  border-color: transparent transparent #fff transparent; 
+  border-style: solid; 
+  border-width: 0 50px 80px 50px;
+  height: 0;
+  left: 350px;
+  position: absolute;
+  top: 350px;
+  width: 0;
+  z-index: -1;
+}
+
+ 
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.months, 
+.days, 
+.time {
+  font-size: 2em;
+  font-family: 'codeProBlack';
+}
+
